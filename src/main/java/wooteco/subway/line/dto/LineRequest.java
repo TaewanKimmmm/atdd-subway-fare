@@ -24,9 +24,8 @@ public class LineRequest {
     @Positive(message = "거리는 양수여야 합니다.")
     private int distance;
 
-    @NotNull
     @PositiveOrZero(message = "추가 요금은 0 이상이어야 합니다.")
-    private Integer extraFare;
+    private int extraFare;
 
     public LineRequest() {
     }
